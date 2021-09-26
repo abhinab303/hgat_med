@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # model and data dir
-# /model
-# /data
+model/
+data/
