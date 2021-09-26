@@ -12,7 +12,7 @@ topic_model = BERTopic()
 
 docs = df.loc[:,['Record - subjective']]
 print(f'fitting topic model')
-topics, probs = topic_model.fit_transform(docs)
+topics, probs = topic_model.fit_transform(docs['Record - subjective'])
 print(f'saving topic model')
 model_path = "/content/drive/MyDrive/hgat_med/hgat_med/model/bertopic"
 topic_model.save(model_path)
